@@ -104,14 +104,8 @@ public class geLogPlugin extends Plugin {
         panel = new geLogPanel();
         panel.setNotesText("Notepad (TYPE HERE)");
         //Loads the coins icon on side panel
-        BufferedImage icon;
-        try {
-                
-	icon = ImageUtil.loadImageResource(getClass(), "coin_icon.png");
-        } catch (Exception e) {
-            e.printStackTrace();
-            icon = null;
-        }
+        final BufferedImage icon = ImageUtil.loadImageResource(getclass(), "coin_icon.png");
+
 
         navButton = NavigationButton.builder()
                 .tooltip("Grand Exchange Log")

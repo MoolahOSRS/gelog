@@ -1,4 +1,4 @@
-package MoolahOSRS.geLog;
+package MoolahOSRS.geLog.ui;
 
 import net.runelite.client.ui.ColorScheme;
 import net.runelite.client.ui.PluginPanel;
