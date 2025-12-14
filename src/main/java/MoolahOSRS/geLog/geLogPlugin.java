@@ -18,7 +18,6 @@ import net.runelite.client.plugins.PluginDescriptor;
 import net.runelite.client.ui.ClientToolbar;
 import net.runelite.client.ui.NavigationButton;
 import net.runelite.client.util.ImageUtil;
-import org.MoolahOSRS.U.I.geLogPanel;
 
 import javax.inject.Inject;
 import java.awt.image.BufferedImage;
@@ -32,6 +31,8 @@ import java.util.Map;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
+
+import MoolahOSRS.geLog.ui.geLogPanel;
 
 @Slf4j
 @PluginDescriptor(
@@ -525,5 +526,6 @@ public class geLogPlugin extends Plugin {
     }
 
 }
+
 
 
