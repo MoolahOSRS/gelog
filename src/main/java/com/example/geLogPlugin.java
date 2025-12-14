@@ -18,6 +18,7 @@ import net.runelite.client.plugins.PluginDescriptor;
 import net.runelite.client.ui.ClientToolbar;
 import net.runelite.client.ui.NavigationButton;
 import net.runelite.client.util.ImageUtil;
+import org.MoolahOSRS.U.I.geLogPanel;
 
 import javax.inject.Inject;
 import java.awt.image.BufferedImage;
@@ -524,4 +525,5 @@ public class geLogPlugin extends Plugin {
     }
 
 }
+
 
