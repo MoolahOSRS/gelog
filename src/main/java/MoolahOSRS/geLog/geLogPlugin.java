@@ -307,8 +307,7 @@ public class geLogPlugin extends Plugin {
         panel.updateTotals(lifetimeTotal, sessionTotal);
     }
 
-    private void loadSessionTotal()
-    {
+    private void loadSessionTotal() {
         // PROTECTION: never load old stale sessions during login reset
         if (!sessionResetOnLogin)
             return;
@@ -362,9 +361,6 @@ public class geLogPlugin extends Plugin {
 
     // Now load/create profile folder for this username
     createLogFolder();
- //   loadLifetimeTotal(); ai  recommend to remove
- //   loadSessionTotal(); ai  recommend to remove
- //   loadNotes(); ai  recommend to remove
 
     // UI
     panel.setPlayerName(name);
@@ -526,6 +522,3 @@ public class geLogPlugin extends Plugin {
     }
 
 }
-
-
-
