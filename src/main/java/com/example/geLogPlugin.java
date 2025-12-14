@@ -17,8 +17,8 @@ import net.runelite.client.plugins.Plugin;
 import net.runelite.client.plugins.PluginDescriptor;
 import net.runelite.client.ui.ClientToolbar;
 import net.runelite.client.ui.NavigationButton;
+import net.runelite.client.util.ImageUtil;
 
-import javax.imageio.ImageIO;
 import javax.inject.Inject;
 import java.awt.image.BufferedImage;
 import java.io.*;
@@ -28,7 +28,6 @@ import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Objects;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -105,7 +104,8 @@ public class geLogPlugin extends Plugin {
         //Loads the coins icon on side panel
         BufferedImage icon;
         try {
-            icon = ImageIO.read(Objects.requireNonNull(getClass().getResourceAsStream("coin_icon.png")));
+                
+	icon = ImageUtil.loadImageResource(getClass(), "coin_icon.png");
         } catch (Exception e) {
             e.printStackTrace();
             icon = null;
@@ -524,3 +524,4 @@ public class geLogPlugin extends Plugin {
     }
 
 }
+
