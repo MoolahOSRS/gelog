@@ -1,4 +1,4 @@
-package thestonedturtle.lootlogger;
+package MoolahOSRS.geLog;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
@@ -29,3 +29,4 @@ public interface geLogConfig extends Config {
     }
 
 }
+
